@@ -1,4 +1,4 @@
-package chap13;
+package intro2Java.chap13;
 
 public class test {
 	public static void main(String[] args) {
