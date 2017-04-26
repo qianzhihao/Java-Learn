@@ -1,4 +1,4 @@
-package chap17;
+package intro2Java.chap17;
 
 import javax.swing.*;
 import java.awt.*;

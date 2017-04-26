@@ -1,4 +1,4 @@
-package chap17;
+package intro2Java.chap17;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
