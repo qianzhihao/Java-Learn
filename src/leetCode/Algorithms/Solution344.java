@@ -1,5 +1,5 @@
 //#344 Reverse String
-package leetCode;
+package leetCode.Algorithms;
 
 public class Solution344 {
 	public static String reverseString(String s) {
