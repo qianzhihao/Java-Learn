@@ -1,4 +1,4 @@
-package chap11;
+package intro2Java.chap11;
 
 public class TestCircleRectangle {
 

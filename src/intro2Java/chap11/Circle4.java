@@ -1,4 +1,4 @@
-package chap11;
+package intro2Java.chap11;
 
 public class Circle4 extends GeometricObject1 {
 	private double radius;

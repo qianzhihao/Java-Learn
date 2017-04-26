@@ -1,4 +1,4 @@
-package chap10;
+package intro2Java.chap10;
 
 public class TestStackOfIntegers {
 

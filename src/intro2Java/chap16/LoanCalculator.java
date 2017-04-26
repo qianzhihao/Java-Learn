@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 
-import chap10.Loan;
+import intro2Java.chap10.Loan;
 
 public class LoanCalculator extends JFrame {
 
