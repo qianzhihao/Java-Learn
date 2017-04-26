@@ -1,4 +1,4 @@
-package chap9;
+package intro2Java.chap9;
 
 public class Calculator {
 
