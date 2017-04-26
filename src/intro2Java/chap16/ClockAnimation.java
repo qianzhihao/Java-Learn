@@ -3,7 +3,7 @@ package intro2Java.chap16;
 import java.awt.event.*;
 import javax.swing.*;
 
-import chap15.StillClock;
+import intro2Java.chap15.StillClock;
 
 public class ClockAnimation extends JFrame {
 

@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-import chap15.MessagePanel;
+import intro2Java.chap15.MessagePanel;
 
 public class ScrollBarDemo extends JFrame 
 {

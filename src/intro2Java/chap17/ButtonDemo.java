@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.*;
 
-import chap15.MessagePanel;
+import intro2Java.chap15.MessagePanel;
 
 public class ButtonDemo extends JFrame {
 

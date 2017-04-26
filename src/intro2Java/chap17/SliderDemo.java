@@ -4,7 +4,7 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-import chap15.MessagePanel;
+import intro2Java.chap15.MessagePanel;
 
 public class SliderDemo extends JFrame 
 {

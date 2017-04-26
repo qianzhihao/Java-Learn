@@ -1,4 +1,4 @@
-package chap15;
+package intro2Java.chap15;
 
 import java.awt.Graphics;
 import javax.swing.*;
