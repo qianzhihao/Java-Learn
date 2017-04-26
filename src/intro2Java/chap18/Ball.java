@@ -1,4 +1,4 @@
-package chap18;
+package intro2Java.chap18;
 
 import javax.swing.Timer;
 import java.awt.*;
