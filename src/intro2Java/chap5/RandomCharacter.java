@@ -1,4 +1,4 @@
-package chap5;
+package intro2Java.chap5;
 
 public class RandomCharacter {
 	public static char getRandomCharacter(char ch1, char ch2){

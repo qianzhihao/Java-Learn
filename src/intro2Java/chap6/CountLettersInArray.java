@@ -1,6 +1,6 @@
 package intro2Java.chap6;
 
-import chap5.RandomCharacter;
+import intro2Java.chap5.RandomCharacter;
 
 public class CountLettersInArray {
 

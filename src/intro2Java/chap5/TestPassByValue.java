@@ -1,4 +1,4 @@
-package chap5;
+package intro2Java.chap5;
 
 public class TestPassByValue {
 	public static void main(String[] args) {
