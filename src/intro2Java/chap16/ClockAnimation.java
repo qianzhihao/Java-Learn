@@ -1,4 +1,4 @@
-package chap16;
+package intro2Java.chap16;
 
 import java.awt.event.*;
 import javax.swing.*;
