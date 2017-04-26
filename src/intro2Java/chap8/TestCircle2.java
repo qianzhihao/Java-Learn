@@ -1,4 +1,4 @@
-package chap8;
+package intro2Java.chap8;
 
 public class TestCircle2 {
 
