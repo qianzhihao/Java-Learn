@@ -1,4 +1,4 @@
-package chap14;
+package intro2Java.chap14;
 
 public class House implements Cloneable, Comparable{
 	private int id;

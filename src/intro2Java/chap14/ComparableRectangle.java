@@ -1,4 +1,4 @@
-package chap14;
+package intro2Java.chap14;
 
 public class ComparableRectangle extends Rectangle implements Comparable{
 	public ComparableRectangle(double width, double height) {
