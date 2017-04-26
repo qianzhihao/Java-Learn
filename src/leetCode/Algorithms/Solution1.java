@@ -15,24 +15,29 @@ import java.util.Map;
  *			Because nums[0] + nums[1] = 2 + 7 = 9,
  *			return [0, 1].
  *
- * * 	Java Map 锟斤拷锟斤拷锟斤拷锟斤拷锟介：
- * 		 Map 锟结供锟斤拷一锟斤拷锟斤拷通锟矫碉拷元锟截存储锟斤拷锟斤拷锟斤拷 Map 锟斤拷锟斤拷锟斤拷锟斤拷锟节存储元锟截对ｏ拷锟斤拷锟斤拷每锟斤拷
- * 		锟斤拷映锟戒到一锟斤拷值锟斤拷锟接革拷锟斤拷锟较讹拷锟皆ｏ拷锟斤拷锟皆斤拷 List 锟斤拷锟斤拷锟角撅拷锟斤拷锟斤拷值锟斤拷锟斤拷 Map 锟斤拷锟斤拷实锟斤拷
- * 		锟较ｏ拷锟斤拷锟斤拷 List 锟斤拷 Map 锟斤拷锟节讹拷锟斤拷 java.util 锟斤拷锟解，锟斤拷锟竭诧拷没锟斤拷直锟接碉拷锟斤拷系锟斤拷
-
  */
 
 public class Solution1 {
-
+//	函数入口，参数 numbers 为给定的数组，target 为给定的两个数字之和
 	public int[] twoSum(int[] numbers, int target) {
+//		新建一个数组 result，用来存放最终运算结果
 		int[] result = new int[2];
+//		新建一个 HashMap 类 map
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+//		 for 循环，循环次数为给定的数组 numbers 的长度
 		for (int i = 0; i < numbers.length; i++) {
+//			map.containsKey：判断 map 集合对象中是否包含指定的键名
 			if (map.containsKey(target - numbers[i])) {
 				result[1] = i + 1;
-				result[1] = map.get(target - numbers[i]);
+//				map.get 返回指定键所映射的值
+				result[0] = map.get(target - numbers[i]);
 				return result;
 			}
+//			 map.put
+//         1.检查 key 是否为空；
+//			2. 计算 key 的 hashcode 和在table 里面的 index；
+//			3. 找到 table 上面的元素； 
+//			4. 遍历链表，如果没有就put 进去，有就更新；
 			map.put(numbers[i], i + 1);
 		}
 		return result;
