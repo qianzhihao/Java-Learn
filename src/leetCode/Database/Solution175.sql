@@ -25,6 +25,21 @@
 --
 --FirstName, LastName, City, State
 
---左连接 left join ，是以左表的主键为主一一匹配进行连接
-select Person.FirstName, Person.LastName, Address.City, Address.State from Person left join Address on Person.PersonId = Address.PersonId;
- 
+-- Basic left join 左连接 left join ，是以左表的主键为主一一匹配进行连接
+SELECT Person.FirstName, Person.LastName, Address.City, Address.State 
+FROM Person 
+LEFT JOIN Address 
+ON Person.PersonId = Address.PersonId;
+
+-- left join + using: 907ms
+SELECT FirstName, LastName, City, State
+FROM Person
+LEFT JOIN Address
+USING(PersonId);
+
+-- natural left join: 940ms
+SELECT FirstName, LastName, City, State
+FROM Person
+NATURAL LEFT JOIN Address;
+
+--left join is the fastest compare to the two others
