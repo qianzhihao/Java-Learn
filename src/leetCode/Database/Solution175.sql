@@ -42,4 +42,4 @@ SELECT FirstName, LastName, City, State
 FROM Person
 NATURAL LEFT JOIN Address;
 
---left join is the fastest compare to the two others
+--综上，左连接 left join 的方式耗时最短，为最优查询
