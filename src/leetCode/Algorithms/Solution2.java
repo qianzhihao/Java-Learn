@@ -4,7 +4,7 @@ package leetCode.Algorithms;
  * @author qianzhihao
  * Q: Add Two Numbers
  *  You are given two non-empty linked lists 
- *  representing two non-negative£¨·Ç¸º£© integers.
+ *  representing two non-negativeï¼ˆéžè´Ÿï¼‰ integers.
  *  The  digits are stored in reverse order and 
  *  each of  their nodes contain a single digit. 
  *  Add the  two numbers and return it as a 
@@ -17,10 +17,10 @@ package leetCode.Algorithms;
  *  Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
  *  Output: 7 -> 0 -> 8
  *  
- *  ÓÐÁ½¸öÁ´±í×÷ÎªÊäÈë£¬ËüÃÇ±íÊ¾ÄæÐòµÄÁ½¸ö·Ç¸ºÊý¡£
- *  ÈçÏÂÃæµÄÁ½¸öÁ´±í±íÊ¾µÄÊÇ342ºÍ465ÕâÁ½¸öÊý¡£
- *  ÄãÐèÒª¼ÆËãËüÃÇµÄºÍ²¢ÇÒÓÃÍ¬ÑùµÄ·½Ê½ÄæÐòÊä³ö¡£
- *  Èç342+465 = 807,ÄãÐèÒª°Ñ½á¹û±í´ïÎª7 ->0 ->8
+ *  æœ‰ä¸¤ä¸ªé“¾è¡¨ä½œä¸ºè¾“å…¥ï¼Œå®ƒä»¬è¡¨ç¤ºé€†åºçš„ä¸¤ä¸ªéžè´Ÿæ•°ã€‚
+ *  å¦‚ä¸‹é¢çš„ä¸¤ä¸ªé“¾è¡¨è¡¨ç¤ºçš„æ˜¯342å’Œ465è¿™ä¸¤ä¸ªæ•°ã€‚
+ *  ä½ éœ€è¦è®¡ç®—å®ƒä»¬çš„å’Œå¹¶ä¸”ç”¨åŒæ ·çš„æ–¹å¼é€†åºè¾“å‡ºã€‚
+ *  å¦‚342+465 = 807,ä½ éœ€è¦æŠŠç»“æžœè¡¨è¾¾ä¸º7 ->0 ->8
  * 
  */
 public class Solution2 {

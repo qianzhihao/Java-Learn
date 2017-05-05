@@ -18,26 +18,26 @@ import java.util.Map;
  */
 
 public class Solution1 {
-//	º¯ÊıÈë¿Ú£¬²ÎÊı numbers Îª¸ø¶¨µÄÊı×é£¬target Îª¸ø¶¨µÄÁ½¸öÊı×ÖÖ®ºÍ
+//	å‡½æ•°å…¥å£ï¼Œå‚æ•° numbers ä¸ºç»™å®šçš„æ•°ç»„ï¼Œtarget ä¸ºç»™å®šçš„ä¸¤ä¸ªæ•°å­—ä¹‹å’Œ
 	public int[] twoSum(int[] numbers, int target) {
-//		ĞÂ½¨Ò»¸öÊı×é result£¬ÓÃÀ´´æ·Å×îÖÕÔËËã½á¹û
+//		æ–°å»ºä¸€ä¸ªæ•°ç»„ resultï¼Œç”¨æ¥å­˜æ”¾æœ€ç»ˆè¿ç®—ç»“æœ
 		int[] result = new int[2];
-//		ĞÂ½¨Ò»¸ö HashMap Àà map
+//		æ–°å»ºä¸€ä¸ª HashMap ç±» map
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-//		 for Ñ­»·£¬Ñ­»·´ÎÊıÎª¸ø¶¨µÄÊı×é numbers µÄ³¤¶È
+//		 for å¾ªç¯ï¼Œå¾ªç¯æ¬¡æ•°ä¸ºç»™å®šçš„æ•°ç»„ numbers çš„é•¿åº¦
 		for (int i = 0; i < numbers.length; i++) {
-//			map.containsKey£ºÅĞ¶Ï map ¼¯ºÏ¶ÔÏóÖĞÊÇ·ñ°üº¬Ö¸¶¨µÄ¼üÃû
+//			map.containsKeyï¼šåˆ¤æ–­ map é›†åˆå¯¹è±¡ä¸­æ˜¯å¦åŒ…å«æŒ‡å®šçš„é”®å
 			if (map.containsKey(target - numbers[i])) {
 				result[1] = i + 1;
-//				map.get ·µ»ØÖ¸¶¨¼üËùÓ³ÉäµÄÖµ
+//				map.get è¿”å›æŒ‡å®šé”®æ‰€æ˜ å°„çš„å€¼
 				result[0] = map.get(target - numbers[i]);
 				return result;
 			}
 //			 map.put
-//         1.¼ì²é key ÊÇ·ñÎª¿Õ£»
-//			2. ¼ÆËã key µÄ hashcode ºÍÔÚtable ÀïÃæµÄ index£»
-//			3. ÕÒµ½ table ÉÏÃæµÄÔªËØ£» 
-//			4. ±éÀúÁ´±í£¬Èç¹ûÃ»ÓĞ¾Íput ½øÈ¥£¬ÓĞ¾Í¸üĞÂ£»
+//         1.æ£€æŸ¥ key æ˜¯å¦ä¸ºç©ºï¼›
+//			2. è®¡ç®— key çš„ hashcode å’Œåœ¨table é‡Œé¢çš„ indexï¼›
+//			3. æ‰¾åˆ° table ä¸Šé¢çš„å…ƒç´ ï¼› 
+//			4. éå†é“¾è¡¨ï¼Œå¦‚æœæ²¡æœ‰å°±put è¿›å»ï¼Œæœ‰å°±æ›´æ–°ï¼›
 			map.put(numbers[i], i + 1);
 		}
 		return result;

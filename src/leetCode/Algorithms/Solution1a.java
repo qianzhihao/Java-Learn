@@ -19,20 +19,20 @@ import java.util.Map;
 
 public class Solution1a {
 
-//	º¯ÊıÈë¿Ú£¬²ÎÊı nums Îª¸ø¶¨µÄÊı×é£¬target Îª¸ø¶¨µÄÁ½¸öÊı×ÖÖ®ºÍ
+//	å‡½æ•°å…¥å£ï¼Œå‚æ•° nums ä¸ºç»™å®šçš„æ•°ç»„ï¼Œtarget ä¸ºç»™å®šçš„ä¸¤ä¸ªæ•°å­—ä¹‹å’Œ
 	public int[] twoSum(int[] nums, int target) {
-//		ĞÂ½¨Ò»¸ö HashMap Àà tracker
+//		æ–°å»ºä¸€ä¸ª HashMap ç±» tracker
 		HashMap<Integer, Integer> tracker = new HashMap<Integer, Integer>();
-//		ĞÂ½¨Ò»¸ö int ±äÁ¿ len £¬ÓÃÀ´¼ÇÂ¼ nums µÄ³¤¶È
+//		æ–°å»ºä¸€ä¸ª int å˜é‡ len ï¼Œç”¨æ¥è®°å½• nums çš„é•¿åº¦
 		int len = nums.length;
-//		 for Ñ­»·£¬Ñ­»·´ÎÊıÎª nums µÄ³¤¶È
+//		 for å¾ªç¯ï¼Œå¾ªç¯æ¬¡æ•°ä¸º nums çš„é•¿åº¦
 		for (int i = 0; i < len; i++) {
-//			 if ÅĞ¶Ï£¬Èô tracker ÖĞº¬ÓĞ nums[i] Õâ¸öÖµÔòÔËĞĞÒÔÏÂÁ½ĞĞ´úÂë
+//			 if åˆ¤æ–­ï¼Œè‹¥ tracker ä¸­å«æœ‰ nums[i] è¿™ä¸ªå€¼åˆ™è¿è¡Œä»¥ä¸‹ä¸¤è¡Œä»£ç 
 			if (tracker.containsKey(nums[i])) {
 				int left = tracker.get(nums[i]);
 				return new int[]{left+1, i+1};
 			} 
-//			tracker ÖĞ²»º¬ÓĞ nums[i] Õâ¸öÖµÔòÔËĞĞÒÔÏÂÒ»ĞĞ´úÂë
+//			tracker ä¸­ä¸å«æœ‰ nums[i] è¿™ä¸ªå€¼åˆ™è¿è¡Œä»¥ä¸‹ä¸€è¡Œä»£ç 
 			else {
 				tracker.put(target - nums[i], i);
 			}
