@@ -13,12 +13,10 @@ package leetCode.Algorithms;
  * 整体思路：利用除法取余取整来转换数字的顺序
  *
  */
-public class Solution7 {
 
+public class Solution7 {
 	public int reverse (int x) {
-		
 		int result = 0;
-		
 		// while 循环， x 为零时跳出；
 		while (x != 0) {
 			// 每次用10去除 x ，取余数，存放在 tail 变量中；
@@ -34,9 +32,7 @@ public class Solution7 {
 			// 用10去除 x ，取整；
 			x = x / 10;
 		}
-		
 		// 循环结束，返回 result，即转换后的数字；
 		return result;
-		
 	}
 }
