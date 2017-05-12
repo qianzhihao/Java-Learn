@@ -7,6 +7,9 @@ public class Solution9 {
 	Determine whether an integer is a palindrome. Do this without extra space.
 
 */
+
+// test
+
 //	A1
 	public boolean isPalindrome1 (int x) {
 		// 如果是负数或者是10的倍数（0除外），则判断为假；
