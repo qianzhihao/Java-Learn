@@ -1,4 +1,4 @@
-package 算法图解.BinarySearch;
+package 算法图解.二分查找;
 
 public class Test {
 
