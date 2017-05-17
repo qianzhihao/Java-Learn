@@ -22,17 +22,24 @@ Since we are always moving the pointer with the smaller value, i.e. if a10 > a21
 
 public class Solution11 {
 	public int maxArea(int[] height) {
+// 定义一个左指针，初始化为零，定义一个右指针，初始化为高度的大小减一；
 	    int left = 0, right = height.length - 1;
 		int maxArea = 0;
+// while 循环，循环条件为左指针小于右指针；
 
 		while (left < right) {
+// 最大面积取以下两者中的最大者：1.上一次循环后的最大面积；2.左指针和右指针中较小的一个与左右指针差的乘积；
 			maxArea = Math.max(maxArea, Math.min(height[left], height[right])
 					* (right - left));
-			if (height[left] < height[right])
+			// 如果左边的高度小于右边的高度，则左边向右移动一个单位；
+if (height[left] < height[right])
 				left++;
+// 否则，右边向左移动一个单位
 			else
 				right--;
 		}
+
+// 返回最大面积
 
 		return maxArea;
 	}
