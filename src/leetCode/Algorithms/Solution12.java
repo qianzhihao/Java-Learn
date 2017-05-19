@@ -20,25 +20,25 @@ M = 1000;
 然后就是贪心的做法，每次选择能表示的最大值，把对应的字符串连起来。 */
 
 public class Solution12 {
-
-public String intToRoman (int num) {
-	int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
-	String[] strs = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 	
-	// 创建一个StringBuilder;
-	StringBuilder sb = new StringBuilder();
-	
-	// for 循环，循环次数为数组 values 的大小，每次循环后指向数组 values 中下一个数字 values[i]；
-	for (int i = 0; i < values.length; i++) {
-		// while 循环，循环条件是 num 大于数组中 values[i] 的值；
-		while (num >= values[i]) {
-			// num 减去 values[i] 的值赋值给自己；
-			num -= values[i];
-			// 将字符串 strs 中第(i+1)个字符添加到字符串 sb 后面；
-			sb.append(strs[i]);
+	public String intToRoman (int num) {
+		int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+		String[] strs = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+		
+		// 创建一个StringBuilder;
+		StringBuilder sb = new StringBuilder();
+		
+		// for 循环，循环次数为数组 values 的大小，每次循环后指向数组 values 中下一个数字 values[i]；
+		for (int i = 0; i < values.length; i++) {
+			// while 循环，循环条件是 num 大于数组中 values[i] 的值；
+			while (num >= values[i]) {
+				// num 减去 values[i] 的值赋值给自己；
+				num -= values[i];
+				// 将字符串 strs 中第(i+1)个字符添加到字符串 sb 后面；
+				sb.append(strs[i]);
+			}
 		}
+		// 将 StringBuilder sb 转换成字符串；
+		return sb.toString();
 	}
-	// 将 StringBuilder sb 转换成字符串；
-	return sb.toString();
-}
 }
