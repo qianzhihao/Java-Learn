@@ -5,8 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author HP
- * Q：3Sum
+ * @author QZh
+ * @time 2017.05.23
+ * Q：LeetCode#15：3Sum
  * Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
    
    Note： The solution set must not contain duplicate triplets.
@@ -21,7 +22,9 @@ import java.util.List;
 public class Solution15 {
 
 	public List<List<Integer>> threeSum(int[] num) {
+		// 对数组中的数字按照从小到大的顺序进行排序；
 		Arrays.sort(num);
+		
 		List<List<Integer>> res = new LinkedList<>();
 		for (int i = 0; i < num.length - 2; i++) {
 			if (i == 0 || (i > 0 && num[i] != num[i-1])) {
